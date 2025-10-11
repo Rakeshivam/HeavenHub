@@ -23,7 +23,6 @@ router
     }),
     userController.login
   );
-  
 
 router.get("/logout", userController.logout);
 
