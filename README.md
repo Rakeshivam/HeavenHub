@@ -61,19 +61,20 @@ It includes authentication, booking workflows, and user-friendly **EJS-based** v
 ## 🗂️ Folder Structure
 
 HeavenHub/
-├── controllers/ # Application logic and route handlers
-├── init/ # Initialization / seeding scripts
-├── models/ # Database models and schemas
-├── public/ # Static files (CSS, images, JS)
-├── routes/ # Express routes
-├── utils/ # Helper functions
-├── views/ # EJS templates for UI
-├── app.js # Main entry point
-├── cloudconfig.js # Cloud configuration file
-├── middleware.js # Custom middlewares
-├── schema.js # Database structure
+├── controllers/        # Application logic and route handlers
+├── init/               # Initialization / seeding scripts
+├── models/             # Database models and schemas
+├── public/             # Static files (CSS, images, JS)
+├── routes/             # Express routes
+├── utils/              # Helper functions
+├── views/              # EJS templates for UI
+├── app.js              # Main entry point
+├── cloudconfig.js      # Cloud configuration file
+├── middleware.js       # Custom middlewares
+├── schema.js           # Database structure
 ├── package.json
 └── .gitignore
+
 
 
 
