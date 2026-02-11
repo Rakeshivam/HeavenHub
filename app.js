@@ -77,6 +77,10 @@ app.use(flash());
 
 app.use(passport.initialize());
 app.use(passport.session());
+app.use((req, res, next) => {
+  res.locals.currUser = req.user;
+  next();
+});
 passport.use(new LocalStrategy(User.authenticate()));
 
 passport.serializeUser(User.serializeUser());
@@ -88,6 +92,11 @@ app.use((req, res, next) => {
   res.locals.currUser = req.user;
   next();
 });
+
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
@@ -105,3 +114,4 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log("server is listening to port 8080");
 });
+

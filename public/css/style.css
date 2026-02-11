@@ -118,3 +118,147 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+
+/* ================================= */
+/* ⭐ REVIEW SECTION PROFESSIONAL UI */
+/* ================================= */
+
+.review-section,
+.col-8.offset-3 {
+  margin-top: 50px;
+}
+
+
+/* ===== Review Form ===== */
+.review-form,
+.needs-validation {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.review-form:hover,
+.needs-validation:hover {
+  transform: translateY(-3px);
+}
+
+
+/* textarea */
+textarea.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  resize: none;
+  border: 1px solid #e5e5e5;
+}
+
+textarea.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(255,56,92,0.15);
+  border-color: #ff385c;
+}
+
+
+/* submit button */
+.needs-validation button,
+.review-form button {
+  background: linear-gradient(135deg,#ff385c,#ff5a5f);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.needs-validation button:hover,
+.review-form button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(255,56,92,0.35);
+}
+
+
+/* ===== All Reviews Grid ===== */
+.row {
+  margin-top: 15px;
+}
+
+
+/* review card */
+.review-card,
+.card.col-5 {
+  border-radius: 16px !important;
+  border: none !important;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.review-card:hover,
+.card.col-5:hover {
+  transform: translateY(-5px);
+}
+
+
+/* username */
+.card-title {
+  font-weight: 600;
+}
+
+
+/* comment */
+.card-text {
+  color: #555;
+  margin: 8px 0;
+}
+
+
+/* delete btn */
+.btn-outline-danger,
+.btn-dark {
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+
+
+/* ================================= */
+/* 📱 RESPONSIVE */
+/* ================================= */
+
+/* tablet */
+@media (max-width: 992px) {
+
+  .card.col-5 {
+    width: 100% !important;
+  }
+}
+
+
+/* mobile */
+@media (max-width: 576px) {
+
+  .needs-validation {
+    padding: 15px;
+  }
+
+  textarea.form-control {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .card.col-5 {
+    margin-left: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
